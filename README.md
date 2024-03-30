@@ -1,6 +1,10 @@
 # Laravel [Key Rotate](https://laravel.com/docs/11.x/encryption#gracefully-rotating-encryption-keys)
 
-![From Ethiopia](https://img.shields.io/badge/From-Ethiopia-brightgreen.svg)
+[![Github Actions](https://github.com/SamAsEnd/laravel-key-rotate/actions/workflows/tests.yml/badge.svg)](https://github.com/SamAsEnd/laravel-key-rotate/actions/workflows/tests.yml)
+![From Ethiopia](https://img.shields.io/badge/From-Ethiopia-brightgreen?style=plastic)
+[![Total Downloads](https://img.shields.io/packagist/dt/samasend/laravel-key-rotate?style=plastic)](https://packagist.org/packages/samasend/laravel-key-rotate)
+[![Latest Stable Version](https://img.shields.io/packagist/v/samasend/laravel-key-rotate?style=plastic)](https://packagist.org/packages/samasend/laravel-key-rotate)
+[![License](https://img.shields.io/packagist/l/samasend/laravel-key-rotate?style=plastic)](https://packagist.org/packages/samasend/laravel-key-rotate)
 
 Laravel Key Rotate is a package that extends Laravel's built-in `key:generate` command, providing a simple and efficient way to rotate your Laravel application's key.
 
