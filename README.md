@@ -1,18 +1,20 @@
-# Laravel [Key Rotate](https://laravel.com/docs/11.x/encryption#gracefully-rotating-encryption-keys)
+# Laravel [Key Rotate](https://laravel.com/docs/11.x/encryption#gracefully-rotating-encryption-keys) ![From Ethiopia](https://img.shields.io/badge/From-Ethiopia_🇪🇹-brightgreen?style=plastic)
 
 [![Github Actions](https://github.com/SamAsEnd/laravel-key-rotate/actions/workflows/tests.yml/badge.svg)](https://github.com/SamAsEnd/laravel-key-rotate/actions/workflows/tests.yml)
-![From Ethiopia](https://img.shields.io/badge/From-Ethiopia-brightgreen?style=plastic)
 [![Total Downloads](https://img.shields.io/packagist/dt/samasend/laravel-key-rotate?style=plastic)](https://packagist.org/packages/samasend/laravel-key-rotate)
 [![Latest Stable Version](https://img.shields.io/packagist/v/samasend/laravel-key-rotate?style=plastic)](https://packagist.org/packages/samasend/laravel-key-rotate)
 [![License](https://img.shields.io/packagist/l/samasend/laravel-key-rotate?style=plastic)](https://packagist.org/packages/samasend/laravel-key-rotate)
 
-Laravel Key Rotate is a package that extends Laravel's built-in `key:generate` command, providing a simple and efficient way to rotate your Laravel application's key.
+Laravel Key Rotate is a package that extends Laravel's built-in `key:generate` command, providing a simple and efficient
+way to rotate your Laravel application's key.
 
-This is particularly useful for maintaining the security and integrity of your application by ensuring that the encryption key is regularly updated.
+This is particularly useful for maintaining the security and integrity of your application by ensuring that the
+encryption key is regularly updated.
 
 ## Prerequisites
-  - **PHP** >= 8.2
-  - **Laravel** >= 11.x
+
+- **PHP** >= 8.2
+- **Laravel** >= 11.x
 
 ## Installation
 
@@ -35,7 +37,14 @@ The previous key will be stored in the `APP_PREVIOUS_KEYS` environment variable,
 
 ## How It Works
 
-The `key:rotate` command extends Laravel's built-in `key:generate` command. When run, it generates a new application key as usual. However, instead of simply replacing the old key, it stores the old key in the `APP_PREVIOUS_KEYS` environment variable. This allows for a smooth transition to the new key, as the old key is still available for decrypting any data that was encrypted with it.
+The `key:rotate` command extends Laravel's built-in `key:generate` command. When run, it generates a new application key
+as usual. However, instead of simply replacing the old key, it stores the old key in the `APP_PREVIOUS_KEYS` environment
+variable. This allows for a smooth transition to the new key, as the old key is still available for decrypting any data
+that was encrypted with it.
+
+> Ideally, this feature should have been implemented in Laravel
+> core, [but it's not](https://github.com/laravel/framework/pull/50322).
+> So, this package is here to help you.
 
 ## License
 
