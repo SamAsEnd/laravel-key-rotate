@@ -1,0 +1,47 @@
+{
+    "name": "samasend/laravel-key-rotate",
+    "description": "Rotate your Laravel application key with ease",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "key",
+        "rotate"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Samson Endale",
+            "email": "git@sam.et"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0",
+        "laravel/pint": "^1.15"
+    },
+    "autoload": {
+        "psr-4": {
+            "SamAsEnd\\KeyRotate\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SamAsEnd\\KeyRotate\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "SamAsEnd\\KeyRotate\\KeyRotateServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
